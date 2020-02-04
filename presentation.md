@@ -23,14 +23,20 @@ Created by natsumo ikeda
 ]
 ]
 ]
+
 ---
+
 layout: true
 class: center, middle, animation-fade
+
 ---
+
 # はじめに
 
 ---
+
 layout: false
+
 # 今日の資料
 
 * ダウンロード（PDF)
@@ -63,6 +69,7 @@ layout: false
 ]
 
 ---
+
 # 本日体験していただくこと
 ## クラウド連携プロフィールアプリ開発
 
@@ -99,6 +106,7 @@ layout: false
 .bottom-bar[
   はじめに
 ]
+
 ---
 ## モバイルアプリを開発しましょう
 ### モバイルアプリとは？
@@ -117,6 +125,7 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 .bottom-bar[
   はじめに
 ]
+
 ---
 ## クラウドとは？
 .center[<img src="readme-img/what-is-cloud.png" alt="AboutMonaca" width="700px">]
@@ -124,6 +133,7 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 .bottom-bar[
   はじめに
 ]
+
 ---
 layout: true
 class: center, middle, animation-fade
@@ -142,10 +152,8 @@ class: center, middle, animation-fade
 .bottom-bar[
   はじめに
 ]
+
 ---
-.footnote_right[
-はじめに
-]
 
 ## 今回利用するツール
 ### Monaca
@@ -219,6 +227,37 @@ layout: false
 ---
 layout: true
 class: center, middle, animation-fade
+
+---
+# ハンズオン
+
+---
+layout: false
+
+.footnote_right[
+ハンズオン
+]
+
+---
+## 事前準備
+
+.size_large_13[
+* Monaca の利用登録（無料）
+  * <a href="https://ja.monaca.io/register/start.html" target="_blank">https://ja.monaca.io/register/start.html</a>
+* ニフクラ mobile backend の利用登録（無料）
+  * <a href="https://mbaas.nifcloud.com/signup.htm" target="_blank">https://mbaas.nifcloud.com/signup.htm</a>
+* ブラウザ Chrome 最新版
+* Monaca デバッガー（任意）
+  * <a href="https://ja.monaca.io/debugger.html" target="_blank">https://ja.monaca.io/debugger.html</a>
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
 ---
 # 2. アプリ作成ツール「Monaca」の準備
 
@@ -229,7 +268,7 @@ layout: false
   2.&nbsp;アプリ作成ツール「Monaca」の準備
 ]
 
-「.color_pink[__Monaca__]」という開発ツールを使ってアプリを作ります。Monacaは子ども向けの開発ツールではありません！プロのエンジニアも使っているツールです。プログラミングには開発言語というコンピューター専用の言葉を使います。Monacaでは HTML/JavaScript/CSS という比較的子どもでも取り組みやすい開発言語を使っています。今回は主に .color_pink[__HTML__] の書き方を学びましょう😉
+「.color_pink[__Monaca__]」という開発ツールを使ってアプリを作ります。Monacaはプロのエンジニアも使っているツールです。Monacaでは HTML/JavaScript/CSS というwebの標準言語でハイブリットアプリが開発できます。今回は主に .color_pink[__HTML__] の書き方を学びましょう😉
 
 .center[<img src="readme-img/Monaca00-2.png" alt="Monaca00-2.png" width="700px">]
 
@@ -245,7 +284,7 @@ layout: false
 * Google Chrome（ブラウザ）
   * https://www.google.com/chrome/
 
-### 持ってきてもらったもの
+### 使用するアカウント
 
 * Gmail（メールアドレス）
   * https://accounts.google.com/signup
@@ -257,7 +296,7 @@ layout: false
 
 ## アプリ作成ツール「Monaca」のアカウントを作る
 
-Google Chrome をダブルクリックしてブラウザを開きます。
+Google Chrome を開きます。
 .center[<img src="readme-img/Monaca35.png" alt="Monaca35.png" width="100px">]
 
 次のURLを入力してEnterキーを押します。<br>
@@ -291,8 +330,8 @@ Gmailのメールアドレスとパスワード（Gmailと同じでも違って�
 ## アプリ作成ツール「Monaca」のアカウントを作る
 
 .col-6[
-Gmailにメールがとどきます。<br>
-とどいたメールを確認しましょう。
+Gmailにメールが届きます。<br>
+メールを確認しましょう。
 ]
 .col-6[
 .center[<img src="readme-img/Monaca37.png" alt="Monaca37.png" width="500px">]
@@ -393,7 +432,7 @@ Monacaからのメールを開いて「本登録はこちら」をクリック�
 ## アプリ作成ツール「Monaca」のアカウントを作る
 
 .col-6[
-「お名前」のみ入力して「無料トライアル開始」をクリックします。
+「名前」のみ入力して「無料トライアル開始」をクリックします。
 ]
 
 .col-6[
@@ -440,7 +479,7 @@ Monacaアカウントの作成は完了です🎉<br>
 
 .size_small_7[
 .right[
-（参考）お家でMonacaを使うときは、https://ja.monaca.io/ からログインして使いましょう☝️
+（参考)次回以降Monacaを使うときは、https://ja.monaca.io/ からログインして使いましょう☝️
 ]
 ]
 
@@ -513,53 +552,6 @@ Monacaアカウントの作成は完了です🎉<br>
 ---
 layout: true
 class: center, middle, animation-fade
----
-
-
-layout: true
-class: center, middle, inverse_sub
----
-# ハンズオン
-
----
-layout: false
-
-.footnote_right[
-ハンズオン
-]
-
-## 事前準備
-
-.size_large_13[
-* Monaca の利用登録（無料）
-  * <a href="https://ja.monaca.io/register/start.html" target="_blank">https://ja.monaca.io/register/start.html</a>
-* ニフクラ mobile backend の利用登録（無料）
-  * <a href="https://mbaas.nifcloud.com/signup.htm" target="_blank">https://mbaas.nifcloud.com/signup.htm</a>
-* ブラウザ Chrome 最新版
-* Monaca デバッガー（任意）
-  * <a href="https://ja.monaca.io/debugger.html" target="_blank">https://ja.monaca.io/debugger.html</a>
-]
-
----
-.footnote_right[
-.right[
-ハンズオン
-]
-]
-
-## 取り組み内容
-APIからデータストアにデータを保存してみましょう
-
-### 環境準備手順
-.size_large_13[
-1. Monaca の準備
-  * Monacaでプロジェクトを作成する
-  * クラウドIDEで開く
-1. Monaca で mobile backend を利用するための準備
-  * JavaScript SDK のインポート
-  * JavaScript SDK の初期化（APIキー設定）
-1. データストアにデータを保存する
-]
 
 ---
 
@@ -574,7 +566,6 @@ layout: false
 Monacaの開発画面は次のようになっています。
 
 .center[<img src="readme-img/Monaca06-2.png" alt="Monaca06-2.png" width="850px">]
-
 
 ---
 .bottom-bar[
@@ -1229,6 +1220,32 @@ layout: false
 .bottom-bar[
   6.&nbsp;TRY：コメント入力機能をつけよう
 ]
+
+---
+layout: true
+class: center, middle, animation-fade
+
+---
+# ハンズオン
+
+---
+layout: false
+
+.footnote_right[
+ハンズオン
+]
+
+---
+### 環境準備手順
+.size_large_13[
+1. mobile backendのアカウントを取得
+1. Monaca で mobile backend を利用するための準備
+  * JavaScript SDK のインポート
+  * JavaScript SDK の初期化（APIキー設定）
+1. データストアにデータを保存する
+]
+
+---
 
 ### 6.2. ニフクラ mobile backend の準備
 
