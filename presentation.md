@@ -39,12 +39,12 @@ layout: false
   * `http://bit.ly/MonacaEasyStartApp_html`
 
 ---
-# 教えてくれる人
+# 担当者
 
 .col-7[
-## 池田 夏藻（イケダ ナツモ）
+## 伊藤　みなみ（イトウ　ミナミ）
 富士通クラウドテクノロジーズ株式会社<br>
-ニフクラ mobile backend 企画チームに所属<br><br>
+ニフクラ mobile backend 企画チーム<br><br>
 <img src="readme-img/mb_logo.png" alt="mb_logo.png" width="500px">
 
 ]
@@ -63,11 +63,11 @@ layout: false
 ]
 
 ---
-# 何ができるの？
-## プロフィールアプリを作りましょう
+# 本日体験していただくこと
+## クラウド連携プロフィールアプリ開発
 
 .col-6[
-出来上がったら作ったアプリを使って<br>みんなで自己紹介（じこしょうかい）<br>をしましょう👍<br><br>メッセージ機能をつけて<br>お友達のアプリにコメントしましょう💬
+出来上がったら作ったアプリを使って<br>みんなで自己紹介<br>をしましょう👍<br><br>メッセージ機能をつけて<br>クラウド上にコメントをアップしましょう💬
 ]
 .col-6[
 .center[<img src="readme-img/complete.png" alt="complete.png" width="200px">]
@@ -80,8 +80,13 @@ layout: false
 ---
 # これからやること
 
+1. はじめに
+    1. モバイルアプリを開発しましょう
+    1. クラウドとは？
+    1. データをクラウドに保存する4つのメリット
+    1. 今回利用するツール
 1. プロフィールアプリの下書き
-1. アプリ作成ツール「Monaca」の準備
+1. 「Monaca」の準備
 1. Monacaの使い方練習
 1. プロフィールアプリを作る①（パーツの書き方）
 1. プロフィールアプリを作る②（アレンジの仕方）
@@ -99,6 +104,69 @@ layout: false
 ---
 layout: true
 class: center, middle, animation-fade
+
+## データをクラウドに保存する<br>4つのメリット
+
+.size_large_13[
+1. 保存した瞬間、瞬時にデータを共有できる
+1. 機種変更やアプリをアンインストールしても<br>データがなくならない
+1. アプリにデータを持たないのでアプリの容量を軽くできる
+1. どこからでもどの端末からでもアクセスできる
+]
+
+.center[<img src="readme-img/cloud_image.png" alt="cloud_image" width="650px">]
+
+---
+.footnote_right[
+はじめに
+]
+
+## 今回利用するツール
+### Monaca
+* __もなか 【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。開発スタイル／コーディング環境は選択可能。
+
+.center[<img src="readme-img/AboutMonaca.png" alt="AboutMonaca" width="700px">]
+
+---
+.footnote_right[
+はじめに
+]
+## 今回利用するツール
+### ニフクラ mobile backend
+__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能を API で呼び出すだけで利用できます。また、APIを簡単に使うための SDK を用意しています（ Swift / Objective-C / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
+
+.center[<img src="readme-img/About_mBaaS.png" alt="About_mBaaS" width="300px">]
+
+---
+.footnote_right[
+はじめに
+]
+
+## 今回利用するツール
+### Monaca と mobile backend で<br>サーバー連携アプリは簡単に実現可能に
+この２つを組み合わせると、高度なアプリも簡単スピーディーに開発できます
+
+.center[<img src="readme-img/Monaca_mBaaS.png" alt="Monaca_mBaaS" width="400px">]
+
+.left-column[
+__《アプリ側》Monaca の利点__
+.size_small_7[
+* **無料** から使える！
+* iOS / Android 同時に開発可能！
+* いつでもどこでも、ブラウザで開発OK！
+* **SDK導入** はクリックだけで簡単！
+]
+]
+.right-column[
+__《サーバー側》mobile backend の利点__
+.size_small_7[
+* **無料** から使える！
+* **バックエンドの開発・運用は一切不要**！
+* **コントロールパネル** からクラウドの状況をパッと確認できる！
+]
+]
+
+---
 ---
 # 1. プロフィールアプリの下書き
 
@@ -174,39 +242,7 @@ https://monaca.mobi/ja/signup
 
 
 ---
-.bottom-bar[
-  2.&nbsp;アプリ作成ツール「Monaca」の準備
-]
 
-### 半角英語数字の入力をするには？
-
-「ひらがな」が入力されてしまうときは、入力方法を切り替えましょう。
-
-.center[<img src="readme-img/keyboad_01.png" alt="keyboad_01.png" width="700px">]
-
----
-.bottom-bar[
-  2.&nbsp;アプリ作成ツール「Monaca」の準備
-]
-
-### 記号はどこ？
-
-URLに含まれる「.」や「/」はここにあるよ！
-
-.center[<img src="readme-img/keyboad_02.png" alt="keyboad_02.png" width="700px">]
-
----
-.bottom-bar[
-  2.&nbsp;アプリ作成ツール「Monaca」の準備
-]
-
-### ちなみに...
-
-「.color_pink[__Enter__]」キーはここだよ！
-
-.center[<img src="readme-img/keyboad_07.png" alt="keyboad_07.png" width="700px">]
-
----
 .bottom-bar[
   2.&nbsp;アプリ作成ツール「Monaca」の準備
 ]
@@ -220,17 +256,6 @@ Gmailのメールアドレスとパスワード（Gmailと同じでも違って�
 .col-6[
 .center[<img src="readme-img/Monaca30.png" alt="Monaca30.png" width="400px">]
 ]
-
----
-.bottom-bar[
-  2.&nbsp;アプリ作成ツール「Monaca」の準備
-]
-
-### 記号はどこ？
-
-メールアドレスに含まれる「@」はここにあるよ！
-
-.center[<img src="readme-img/keyboad_03.png" alt="keyboad_03.png" width="700px">]
 
 ---
 .bottom-bar[
@@ -354,17 +379,6 @@ Monacaからのメールを開いて「本登録はこちら」をクリック�
   2.&nbsp;アプリ作成ツール「Monaca」の準備
 ]
 
-### ひらがな・カタカナや漢字を入力するには？
-
-半角英語数字入力からひらがな・カタカナや漢字の入力に変更するときは、もう一度キーを押しましょう。
-
-.center[<img src="readme-img/keyboad_01.png" alt="keyboad_01.png" width="700px">]
-
----
-.bottom-bar[
-  2.&nbsp;アプリ作成ツール「Monaca」の準備
-]
-
 ## アプリ作成ツール「Monaca」のアカウントを作る
 
 「OK」をクリックします。
@@ -474,6 +488,55 @@ Monacaアカウントの作成は完了です🎉<br>
 layout: true
 class: center, middle, animation-fade
 ---
+
+
+layout: true
+class: center, middle, inverse_sub
+---
+# ハンズオン
+
+---
+layout: false
+
+.footnote_right[
+ハンズオン
+]
+
+## 事前準備
+
+.size_large_13[
+* Monaca の利用登録（無料）
+  * <a href="https://ja.monaca.io/register/start.html" target="_blank">https://ja.monaca.io/register/start.html</a>
+* ニフクラ mobile backend の利用登録（無料）
+  * <a href="https://mbaas.nifcloud.com/signup.htm" target="_blank">https://mbaas.nifcloud.com/signup.htm</a>
+* ブラウザ Chrome 最新版
+* Monaca デバッガー（任意）
+  * <a href="https://ja.monaca.io/debugger.html" target="_blank">https://ja.monaca.io/debugger.html</a>
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン
+]
+]
+
+## 取り組み内容
+APIからデータストアにデータを保存してみましょう
+
+### 環境準備手順
+.size_large_13[
+1. Monaca の準備
+  * Monacaでプロジェクトを作成する
+  * クラウドIDEで開く
+1. Monaca で mobile backend を利用するための準備
+  * JavaScript SDK のインポート
+  * JavaScript SDK の初期化（APIキー設定）
+1. データストアにデータを保存する
+]
+
+---
+
 # 3. Monacaの使い方練習
 
 ---
@@ -512,18 +575,6 @@ bodyタグの間に書いた内容がアプリの画面に表示される仕組�
   3.&nbsp;Monacaの使い方練習
 ]
 
-### ちなみに...
-
-「.color_pink[__Back Space__]」キーはここだよ！
-
-.center[<img src="readme-img/keyboad_08.png" alt="keyboad_08.png" width="700px">]
-
-
----
-.bottom-bar[
-  3.&nbsp;Monacaの使い方練習
-]
-
 全部消したら「__こんにちは！__」と書いてみましょう。<br><br>
 
 .center[<img src="readme-img/Monaca07-2.png" alt="Monaca07-2.png" width="500px">]
@@ -537,15 +588,6 @@ bodyタグの間に書いた内容がアプリの画面に表示される仕組�
 プレビュー画面に正しく表示させるには編集したファイル（index.html）を.color_pink[__保存__]しなければなりません。
 
 .center[<img src="readme-img/Monaca08.png" alt="Monaca08.png" width="700px">]
-
----
-.bottom-bar[
-  3.&nbsp;Monacaの使い方練習
-]
-
-「.color_pink[__Ctrl__]」+「.color_pink[__S__]」キーを同時に押して、保存をしてみましょう。
-
-.center[<img src="readme-img/keyboad_04.png" alt="keyboad_04.png" width="700px">]
 
 ---
 .bottom-bar[
@@ -685,19 +727,6 @@ layout: false
 .color_pink[__見出し__]と.color_pink[__段落__]を組み合わせて、下書きした内容を画面の中に作ってみましょう！
 
 .center[<img src="readme-img/Monaca12.png" alt="Monaca12.png" width="950px">]
-
----
-.bottom-bar[
-  4.&nbsp;プロフィールアプリを作る①（パーツの書き方）
-]
-
-### 記号はどこ？
-
-タグ含まれる「<」,「>」はここにあるよ！<br>
-ボタンの上の行に書かれている記号を入力するときは「Shift」ボタンを押しながら入力します。
-
-.center[<img src="readme-img/keyboad_05.png" alt="keyboad_05.png" width="700px">]
-
 
 ---
 .bottom-bar[
@@ -903,17 +932,6 @@ layout: false
 プロフィールアプリに画像を表示してみましょう。タイトル（h1タグ）の下に追加してみましょう。
 
 .center[<img src="readme-img/Monaca19.png" alt="Monaca19.png" width="850px">]
-
----
-.bottom-bar[
-  4.&nbsp;プロフィールアプリを作る①（パーツの書き方）
-]
-
-### 記号はどこ？
-
-imgタグに含まれる「"」,「=」はここにあるよ！
-
-.center[<img src="readme-img/keyboad_06.png" alt="keyboad_06.png" width="700px">]
 
 ---
 layout: true
