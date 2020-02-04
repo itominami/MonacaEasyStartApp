@@ -102,6 +102,30 @@ layout: false
 ]
 
 ---
+.footnote_right[
+はじめに
+]
+
+## モバイルアプリを開発しましょう
+### モバイルアプリとは？
+.right[
+モバイルアプリ（スマートフォンアプリ）とは、スマートフォンのなかで動作するソフトウェアのことです。<br>
+LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1つです。<br>
+モバイルアプリは、今や私たちの生活に欠かせない存在となっています。
+]
+
+.left[<img src="readme-img/About_NCMB.png" alt="AboutNCMB" width="400px">]
+
+---
+.footnote_right[
+はじめに
+]
+
+## クラウドとは？
+
+.center[<img src="readme-img/what-is-cloud.png" alt="AboutMonaca" width="700px">]
+
+---
 layout: true
 class: center, middle, animation-fade
 
