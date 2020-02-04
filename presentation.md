@@ -41,7 +41,7 @@ layout: false
 ---
 # 担当者
 
-.col-7[
+.col-6[
 ## 伊藤　みなみ（イトウ　ミナミ）
 富士通クラウドテクノロジーズ株式会社<br>
 ニフクラ mobile backend 企画チーム<br><br>
@@ -51,7 +51,7 @@ layout: false
 
 .col-5[
 .center[
-<img src="readme-img/takano.png" alt="takano.png" width="300px">
+<img src="readme-img/takano.png" alt="takano.png" width="200px">
 .size_small_7[
 ニフクラ mobile backend オリジナルキャラクター タカノくん
 ]
@@ -78,8 +78,7 @@ layout: false
 ]
 
 ---
-# これからやること
-
+# アジェンダ
 1. はじめに
     1. モバイルアプリを開発しましょう
     1. クラウドとは？
@@ -100,31 +99,31 @@ layout: false
 .bottom-bar[
   はじめに
 ]
-
 ---
-.footnote_right[
-はじめに
-]
-
 ## モバイルアプリを開発しましょう
 ### モバイルアプリとは？
-.right[
+.col-6[
 モバイルアプリ（スマートフォンアプリ）とは、スマートフォンのなかで動作するソフトウェアのことです。<br>
 LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1つです。<br>
 モバイルアプリは、今や私たちの生活に欠かせない存在となっています。
 ]
 
-.left[<img src="readme-img/About_NCMB.png" alt="AboutNCMB" width="400px">]
-
----
-.footnote_right[
-はじめに
+.col-5[
+.center[
+<img src="readme-img/About_NCMB.png" alt="AboutNCMB" width="400px">
+]
 ]
 
+.bottom-bar[
+  はじめに
+]
+---
 ## クラウドとは？
-
 .center[<img src="readme-img/what-is-cloud.png" alt="AboutMonaca" width="700px">]
 
+.bottom-bar[
+  はじめに
+]
 ---
 layout: true
 class: center, middle, animation-fade
@@ -140,6 +139,9 @@ class: center, middle, animation-fade
 
 .center[<img src="readme-img/cloud_image.png" alt="cloud_image" width="650px">]
 
+.bottom-bar[
+  はじめに
+]
 ---
 .footnote_right[
 はじめに
