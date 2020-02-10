@@ -1,4 +1,4 @@
-title: プロフィールアプリを作ろう！
+title: プログラミング体験<br>1dayインターン
 class: animation-fade
 layout: true
 
@@ -45,10 +45,9 @@ layout: false
   * `http://bit.ly/MonacaEasyStartApp_html`
 
 ---
-# 担当者
+# 伊藤みなみ
 
-.col-6[
-## 伊藤　みなみ（イトウ　ミナミ）
+.col-7[
 富士通クラウドテクノロジーズ株式会社<br>
 ニフクラ mobile backend 企画チーム<br><br>
 <img src="readme-img/mb_logo.png" alt="mb_logo.png" width="500px">
@@ -56,8 +55,8 @@ layout: false
 ]
 
 .col-5[
-.center[
-<img src="readme-img/takano.png" alt="takano.png" width="200px">
+.right[
+<img src="readme-img/takano.png" alt="takano.png" width="300px">
 .size_small_7[
 ニフクラ mobile backend オリジナルキャラクター タカノくん
 ]
@@ -74,7 +73,7 @@ layout: false
 ## クラウド連携プロフィールアプリ開発
 
 .col-6[
-出来上がったら作ったアプリを使って<br>みんなで自己紹介<br>をしましょう👍<br><br>メッセージ機能をつけて<br>クラウド上にコメントをアップしましょう💬
+出来上がったら作ったアプリを使って<br>みんなで自己紹介をしましょう👍<br><br>メッセージ機能をつけて<br>クラウド上にコメントをアップしましょう💬
 ]
 .col-6[
 .center[<img src="readme-img/complete.png" alt="complete.png" width="200px">]
@@ -85,29 +84,40 @@ layout: false
 ]
 
 ---
-# アジェンダ
-1. はじめに
+## アジェンダ
+.col-6[
+1. __業界知識[基礎編]__
     1. モバイルアプリを開発しましょう
     1. クラウドとは？
-    1. データをクラウドに保存する4つのメリット
+    1. データをクラウドに保存する<br>4つのメリット
     1. 今回利用するツール
-1. プロフィールアプリの下書き
-1. 「Monaca」の準備
-1. Monacaの使い方練習
-1. プロフィールアプリを作る①（パーツの書き方）
-1. プロフィールアプリを作る②（アレンジの仕方）
-1. TRY：コメント入力機能をつけよう
-    1. 機能追加に欠かせない道具 ニフクラ mobile backend とは
+1. __プロフィールアプリの下書き__
+1. __「Monaca」の準備__
+1. __Monacaの使い方練習__
+]
+.col-6[
+1. __プロフィールアプリを作る①__<br>（パーツの書き方）
+1. __プロフィールアプリを作る②__<br>（アレンジの仕方）
+1. __TRY：コメント入力機能をつけよう__
+    1. ニフクラ mobile backend とは
     1. ニフクラ mobile backend の準備
     1. コピペで機能追加
     1. 動作確認
-1. アプリを使って自己紹介しよう！
-
-.bottom-bar[
-  はじめに
+1. __アプリを使って自己紹介しよう！__
 ]
 
 ---
+
+layout: true
+class: center, middle, animation-fade
+
+---
+
+# 業界知識 [基礎編]
+
+---
+layout: false
+
 ## モバイルアプリを開発しましょう
 ### モバイルアプリとは？
 .col-6[
@@ -117,7 +127,7 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 ]
 
 .col-5[
-.center[
+.right[
 <img src="readme-img/About_NCMB.png" alt="AboutNCMB" width="400px">
 ]
 ]
@@ -135,14 +145,11 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 ]
 
 ---
-layout: true
-class: center, middle, animation-fade
-
-## データをクラウドに保存する<br>4つのメリット
+## データをクラウドに保存する4つのメリット
 
 .size_large_13[
 1. 保存した瞬間、瞬時にデータを共有できる
-1. 機種変更やアプリをアンインストールしても<br>データがなくならない
+1. 機種変更やアプリをアンインストールしてもデータがなくならない
 1. アプリにデータを持たないのでアプリの容量を軽くできる
 1. どこからでもどの端末からでもアクセスできる
 ]
@@ -155,52 +162,77 @@ class: center, middle, animation-fade
 
 ---
 
+layout: true
+class: center, middle, animation-fade
+
+---
+
+# 今回利用するツール
+
+---
+layout: false
+
 ## 今回利用するツール
 ### Monaca
-* __もなか 【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。開発スタイル／コーディング環境は選択可能。
+* __【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。開発スタイル／コーディング環境は選択可能。
 
-.center[<img src="readme-img/AboutMonaca.png" alt="AboutMonaca" width="700px">]
+.center[<img src="readme-img/AboutMonaca.png" alt="AboutMonaca" width="600px">]
 
----
-.footnote_right[
-はじめに
-]
-## 今回利用するツール
-### ニフクラ mobile backend
-__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能を API で呼び出すだけで利用できます。また、APIを簡単に使うための SDK を用意しています（ Swift / Objective-C / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
-
-.center[<img src="readme-img/About_mBaaS.png" alt="About_mBaaS" width="300px">]
-
----
-.footnote_right[
-はじめに
+.bottom-bar[
+  はじめに
 ]
 
+
+---
+
 ## 今回利用するツール
-### Monaca と mobile backend で<br>サーバー連携アプリは簡単に実現可能に
+.col-7[
+  ### ニフクラ mobile backend
+__【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ <br>
+スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能を API で呼び出すだけで利用できます。また、APIを簡単に使うための SDK を用意しています（ Swift / Objective-C / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
+]
+
+.center[<img src="readme-img/About_mBaaS.png" alt="About_mBaaS" width="400px">]
+
+
+.bottom-bar[
+  はじめに
+]
+
+---
+layout: false
+
+## 今回利用するツール
+### Monaca と mobile backend でサーバー連携アプリは簡単に実現可能
+.size_small_7[
 この２つを組み合わせると、高度なアプリも簡単スピーディーに開発できます
-
+]
 .center[<img src="readme-img/Monaca_mBaaS.png" alt="Monaca_mBaaS" width="400px">]
 
-.left-column[
-__《アプリ側》Monaca の利点__
-.size_small_7[
-* **無料** から使える！
-* iOS / Android 同時に開発可能！
-* いつでもどこでも、ブラウザで開発OK！
-* **SDK導入** はクリックだけで簡単！
+.col-6[
+      __《アプリ側》Monaca の利点__
+  * **無料** から使える！
+  * iOS / Android 同時に開発可能！
+  * いつでもどこでも、ブラウザで開発OK！
+  * **SDK導入** はクリックだけで簡単！
+    ]
+.col-6[
+     __《サーバー側》mobile backend の利点__
+  * **無料** から使える！
+  * **バックエンドの開発・運用は一切不要**！
+  * **コントロールパネル** からクラウドの状況をパッと確認できる！
+    ]
 ]
-]
-.right-column[
-__《サーバー側》mobile backend の利点__
-.size_small_7[
-* **無料** から使える！
-* **バックエンドの開発・運用は一切不要**！
-* **コントロールパネル** からクラウドの状況をパッと確認できる！
-]
+  
+
+.bottom-bar[
+  はじめに
 ]
 
 ---
+layout: true
+class: center, middle, inverse_sub
+
 ---
 # 1. プロフィールアプリの下書き
 
@@ -229,16 +261,11 @@ layout: true
 class: center, middle, animation-fade
 
 ---
-# ハンズオン
+# 2. アプリ作成ツール「Monaca」の準備
 
 ---
 layout: false
 
-.footnote_right[
-ハンズオン
-]
-
----
 ## 事前準備
 
 .size_large_13[
@@ -251,18 +278,14 @@ layout: false
   * <a href="https://ja.monaca.io/debugger.html" target="_blank">https://ja.monaca.io/debugger.html</a>
 ]
 
----
-.footnote_right[
-.right[
-ハンズオン
+
+.bottom-bar[
+  ハンズオン
 ]
-]
+
 
 ---
 # 2. アプリ作成ツール「Monaca」の準備
-
----
-layout: false
 
 .bottom-bar[
   2.&nbsp;アプリ作成ツール「Monaca」の準備
@@ -272,6 +295,10 @@ layout: false
 
 .center[<img src="readme-img/Monaca00-2.png" alt="Monaca00-2.png" width="700px">]
 
+
+.bottom-bar[
+  ハンズオン
+]
 
 ---
 .bottom-bar[
@@ -1152,7 +1179,7 @@ layout: false
 layout: true
 class: center, middle, animation-fade
 ---
-# 6. TRY：コメント入力機能をつけよう
+# 6. mobile backend 事前準備<br>（クラウド連携）
 
 ---
 layout: false
@@ -1223,20 +1250,12 @@ layout: false
 ]
 
 ---
-layout: true
-class: center, middle, animation-fade
-
----
-# ハンズオン
-
----
 layout: false
 
-.footnote_right[
-ハンズオン
+.bottom-bar[
+  6.&nbsp;TRY：コメント入力機能をつけよう
 ]
 
----
 ### 環境準備手順
 .size_large_13[
 1. mobile backendのアカウントを取得
@@ -1247,6 +1266,9 @@ layout: false
 ]
 
 ---
+.bottom-bar[
+  6.&nbsp;TRY：コメント入力機能をつけよう
+]
 
 ### 6.2. ニフクラ mobile backend の準備
 
