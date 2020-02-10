@@ -615,11 +615,12 @@ index.html が保存されて、プレビュー画面も更新されましたね
 
 .center[<img src="readme-img/Monaca09.png" alt="Monaca09.png" width="750px">]
 
-練習はおしまいです！いよいよアプリを作っていきますよ🤩
+練習はおしまいです！いよいよアプリを作っていきます🤩
 
 ---
 layout: true
 class: center, middle, animation-fade
+
 ---
 # 4. プロフィールアプリを作る①<br>（パーツの書き方）
 
