@@ -1608,35 +1608,7 @@ mobile backendの準備ができたので、<br>Monacaでmobile backendを使う
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.2. ニフクラ mobile backend の準備
-#### コピペするためにこの資料をパソコンにダウンロードする
 
-この後からは所々出来上がったコードをコピペで使っていくために、コピー元のデータを用意しましょう。<br>
-ブラウザの別のタブを開いて、次のリンクを入力してEnterキーを押します。
-
-.center[
-.size_large_18[
-https://00m.in/xB322
-]
-]
-
----
-.bottom-bar[
-  6.&nbsp;mobile backend 事前準備（クラウド連携）
-]
-
-### 6.2. ニフクラ mobile backend の準備
-#### コピペするためにこの資料をパソコンにダウンロードする
-
-別のタブが開いて、資料が表示されます。
-
-.center[<img src="readme-img/screenshot.png" alt="screenshot.png" width="600px">]
-
-
----
-.bottom-bar[
-  6.&nbsp;mobile backend 事前準備（クラウド連携）
-]
 
 ### 6.2. ニフクラ mobile backend の準備
 
