@@ -49,17 +49,19 @@ layout: false
 
 .col-7[
 富士通クラウドテクノロジーズ株式会社<br>
-ニフクラ mobile backend 企画チーム<br><br>
+ニフクラ mobile backend 企画チーム<br>
+新卒2年目文系卒<br><br>
 <img src="readme-img/mb_logo.png" alt="mb_logo.png" width="500px">
 
+<img src="readme-img/takano.png" alt="takano.png" width="200px">
+.size_small_7[
+ニフクラ mobile backend オリジナルキャラクター タカノくん
+]
 ]
 
 .col-5[
 .right[
-<img src="readme-img/takano.png" alt="takano.png" width="300px">
-.size_small_7[
-ニフクラ mobile backend オリジナルキャラクター タカノくん
-]
+<img src="readme-img/ito.jpg" alt="profile.png" width="350px">
 ]
 ]
 
@@ -73,7 +75,9 @@ layout: false
 ## クラウド連携プロフィールアプリ開発
 
 .col-6[
-出来上がったら作ったアプリを使って<br>みんなで自己紹介をしましょう👍<br><br>メッセージ機能をつけて<br>クラウド上にコメントをアップしましょう💬
+.size_small_7[
+本日は「クラウド」や「API」などの単語を学びながら<br>プログラミングの基礎を知った上で、プロフィールアプリを<br>開発していきましょう！<br>出来上がったら作ったアプリを使ってみんなで自己紹介をしましょう👍<br><br>メッセージ機能をつけて<br>クラウド上にコメントをアップしましょう💬
+]
 ]
 .col-6[
 .center[<img src="readme-img/complete.png" alt="complete.png" width="200px">]
@@ -86,24 +90,25 @@ layout: false
 ---
 ## アジェンダ
 .col-6[
-1. __業界知識[基礎編]__
-    1. モバイルアプリを開発しましょう
+* __基礎知識を学習しましょう__
+    1. モバイルアプリ開発について
     1. クラウドとは？
     1. データをクラウドに保存する<br>4つのメリット
-    1. 今回利用するツール
-1. __プロフィールアプリの下書き__
-1. __「Monaca」の準備__
-1. __Monacaの使い方練習__
+* __今回利用するツール__
+* __1.プロフィールアプリの下書き__
+* __2.アプリ作成ツール「Monaca」の準備__
+* __3.Monacaの使い方練習__
+* __4.プロフィールアプリを作る①__<br>（パーツの書き方）
 ]
 .col-6[
-1. __プロフィールアプリを作る①__<br>（パーツの書き方）
-1. __プロフィールアプリを作る②__<br>（アレンジの仕方）
-1. __TRY：コメント入力機能をつけよう__
+* __5.プロフィールアプリを作る②__<br>（アレンジの仕方）
+* __6.mobile backend1事前準備（クラウド連携）__
     1. ニフクラ mobile backend とは
     1. ニフクラ mobile backend の準備
     1. コピペで機能追加
     1. 動作確認
-1. __アプリを使って自己紹介しよう！__
+* __7.アプリを使って自己紹介しよう！__
+* __まとめ__
 ]
 
 ---
@@ -113,12 +118,12 @@ class: center, middle, animation-fade
 
 ---
 
-# 業界知識 [基礎編]
+# 基礎知識を学習しましょう
 
 ---
 layout: false
 
-## モバイルアプリを開発しましょう
+## モバイルアプリ開発について
 ### モバイルアプリとは？
 .col-6[
 モバイルアプリ（スマートフォンアプリ）とは、スマートフォンのなかで動作するソフトウェアのことです。<br>
@@ -174,7 +179,7 @@ layout: false
 
 ## 今回利用するツール
 ### Monaca
-* __【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。開発スタイル／コーディング環境は選択可能。
+* __【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。<br>開発スタイル／コーディング環境は選択可能。
 
 .center[<img src="readme-img/AboutMonaca.png" alt="AboutMonaca" width="600px">]
 
@@ -210,13 +215,17 @@ layout: false
 .center[<img src="readme-img/Monaca_mBaaS.png" alt="Monaca_mBaaS" width="400px">]
 
 .col-6[
+  .size_small_7[
       __《アプリ側》Monaca の利点__
   * **無料** から使える！
   * iOS / Android 同時に開発可能！
   * いつでもどこでも、ブラウザで開発OK！
   * **SDK導入** はクリックだけで簡単！
     ]
+]
+
 .col-6[
+  .size_small_7[
      __《サーバー側》mobile backend の利点__
   * **無料** から使える！
   * **バックエンドの開発・運用は一切不要**！
@@ -320,6 +329,24 @@ layout: false
 .bottom-bar[
   2.&nbsp;アプリ作成ツール「Monaca」の準備
 ]
+
+## Monaca を使うために必要なもの
+### Gmailアカウントをお持ちでない方
+
+こちらで用意しているアカウントがあるので近くのスタッフにお声がけください🙌
+```
+使用上の注意
+  1. 最後にアプリを削除してください
+  1. mBaaSのログアウトを行ってください
+  1. Chrome上からもログアウトを行ってください
+ ※ ChromeにPWを記憶するかどうか確認されたらキャンセルを選択してください
+```
+
+---
+.bottom-bar[
+  2.&nbsp;アプリ作成ツール「Monaca」の準備
+]
+
 
 ## アプリ作成ツール「Monaca」のアカウントを作る
 
@@ -628,7 +655,7 @@ bodyタグの間に書いた内容がアプリの画面に表示される仕組�
   3.&nbsp;Monacaの使い方練習
 ]
 
-あれ？書き直したけどプレビュー画面が変わらないね😢<br>
+書き直しただけでは反映されません😢<br>
 プレビュー画面に正しく表示させるには編集したファイル（index.html）を.color_pink[__保存__]しなければなりません。
 
 .center[<img src="readme-img/Monaca08.png" alt="Monaca08.png" width="700px">]
@@ -642,7 +669,7 @@ index.html が保存されて、プレビュー画面も更新されましたね
 
 .center[<img src="readme-img/Monaca09.png" alt="Monaca09.png" width="750px">]
 
-練習はおしまいです！いよいよアプリを作っていきます🤩
+練習は以上です！いよいよアプリを作っていきます🤩
 
 ---
 layout: true
@@ -733,7 +760,7 @@ layout: false
 
 ### タグを使わないで書くとどうなるの？
 
-改行（行がかわること）して書いても、<br>アプリ側では改行されずに表示されてしまいます😖
+コードエディター上で改行して書いても、<br>アプリ側では改行されずに表示されてしまいます😖
 
 .center[<img src="readme-img/Monaca11-1.png" alt="Monaca11-1.png" width="750px">]
 
@@ -755,13 +782,14 @@ layout: false
 .color_pink[__見出し__]と.color_pink[__段落__]を組み合わせて、下書きした内容を画面の中に作ってみましょう！
 
 ```html
-<h1>私のホームページアプリ</h1>
-<p>私の名前は○○　○○です。小学校○年生です。今学校では○○を勉強しています。</p>
+<h1>私のプロフィールアプリ</h1>
+<p>名前は○○○ ○○です。大学では○○○を専攻しています。○○のゼミに入っています。○○サークルに入っています。
+</p>
 <h2>私の好きなもの</h2>
 <h3>食べ物</h3>
 <p>ハンバーグ・餃子</p>
 <h3>趣味</h3>
-<p>バスケ、算数</p>
+<p>バスケ、数学</p>
 ```
 
 ---
@@ -780,7 +808,7 @@ layout: false
 
 ## 画像
 
-文字の入力が終わったら、画像を入れてみましょう！（ちょっと難しくなるよ🙌）
+文字の入力が終わったら、画像を入れてみましょう！
 
 .center[
 <img src="readme-img/takano.png" alt="takano.png" width="300px">
@@ -904,9 +932,6 @@ layout: false
 
 .col-5[
 デスクトップに用意した画像をファイルアップロード画面に.color_pink[__ドラッグ＆ドロップ__]してファイルをアップロードします。
-.size_small_7[
-（参考）マウスでクリックした状態のままファイルを移動して、指定の場所でクリックを解除（指を離す）することをドラッグ&ドロップと言います。
-]
 ]
 .col-7[
 .center[<img src="readme-img/Monaca16.png" alt="Monaca16.png" width="550px">]
@@ -976,7 +1001,7 @@ layout: false
 
 プロフィールアプリに画像を表示してみましょう。タイトル（h1タグ）の下に追加してみましょう。
 
-.center[<img src="readme-img/Monaca19.png" alt="Monaca19.png" width="850px">]
+.center[<img src="readme-img/Monaca19.png" alt="Monaca19.png" width="750px">]
 
 ---
 layout: true
@@ -1044,7 +1069,7 @@ layout: false
 ```
 
 色は、青：`blue`, ピンク：`pink`, 赤：`red` など、<br>
-色名の.color_pink[__英語表記__]または.color_pink[__色コード__]で指定することができるよ☝️
+色名の.color_pink[__英語表記__]または.color_pink[__色コード__]で指定することができます☝️
 
 .col-6[
 ＜例＞ タカノ君の羽の青色： `#006cb4`
@@ -1087,7 +1112,7 @@ layout: false
 
 .center[<img src="readme-img/Monaca21.png" alt="Monaca21.png" width="900px">]
 
-色の指定方法は背景色と同じく英語表記か色コードで指定できるよ☝️
+色の指定方法は背景色と同じく英語表記か色コードで指定できます☝️
 
 
 ---
@@ -1097,10 +1122,10 @@ layout: false
 
 ## 文字の色変更
 
-＜例＞タイトルの一部だけを変えることもできるよ👍
+＜例＞タイトルの一部だけを変えることもできます👍
 
 ```html
-<h1>私の<font color="red">ホームページ</font>アプリ</h1>
+<h1>私の<font color="red">プロフィール</font>アプリ</h1>
 ```
 
 .center[<img src="readme-img/Monaca22.png" alt="Monaca22.png" width="750px">]
@@ -1185,20 +1210,20 @@ class: center, middle, animation-fade
 layout: false
 
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-最後に.color_pink[__特別な機能__]を追加しましょう😉！<br>
-できたプロフィールアプリをみんなに見せてコメントをもらえるようにしましょう😍<br>
+最後に.color_pink[__コメント機能__]を追加しましょう😉！<br>
+完成したプロフィールアプリをみんなに見せてコメントをもらえるようにしましょう😍<br>
 
 .size_small_7[
-この機能の追加はちょっと難しいので.color_pink[__コピペ__]（コピー＆ペースト（貼り付ける）のこと）を使ってサクッと機能を追加しちゃいましょう。
+この機能の追加はちょっと難しいので所々.color_pink[__コピペ__]を使って機能を追加しちゃいましょう。
 ]
 
 ### これからやること
 
 .col-6[
-1. 機能追加に欠かせない道具 .color_pink[__ニフクラ mobile backend__] とは
+1. アプリの汎用的な機能をクラウド上で提供する .color_pink[__ニフクラ mobile backend__] とは
 1. ニフクラ mobile backend の準備
 1. コピペで機能追加
 1. 動作確認
@@ -1211,14 +1236,12 @@ layout: false
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.1. 機能追加に欠かせない道具ニフクラ mobile backend とは
+### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
 
 スマートフォンアプリの.color_pink[__クラウドデータベース__]サービスです。<br>
-と言っても難しくてよくわからないですよね…😵<br>
-よくわからなくても実はアプリに欠かすことのできない存在なんです。<br>
 
 .col-7[
 ＜例＞__メッセージ送信アプリ__<br>
@@ -1233,10 +1256,29 @@ layout: false
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.1. 機能追加に欠かせない道具ニフクラ mobile backend とは
+### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
+
+.center[<img src="readme-img/usecase.png" alt="usecase.png" width="750px">]
+
+
+---
+.bottom-bar[
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+
+### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
+
+.center[<img src="readme-img/function.png" alt="function.png" width="700px">]
+
+
+---
+.bottom-bar[
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
 
 
 .center[<img src="readme-img/mb_02.png" alt="mb_02.png" width="450px">]
@@ -1246,14 +1288,7 @@ layout: false
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
-]
-
----
-layout: false
-
-.bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 環境準備手順
@@ -1267,7 +1302,7 @@ layout: false
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1283,7 +1318,7 @@ https://mbaas.nifcloud.com/
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1294,7 +1329,7 @@ https://mbaas.nifcloud.com/
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1306,7 +1341,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1317,7 +1352,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1328,7 +1363,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1339,7 +1374,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1350,7 +1385,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1361,7 +1396,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1372,7 +1407,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1389,7 +1424,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1403,7 +1438,7 @@ SNS ID として Gmail を使ってアカウントを作成します。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1417,14 +1452,60 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
+
+### 6.2. ニフクラ mobile backend の準備
+
+#### .color_pink[__API__]とは　（.color_pink[A]pplication .color_pink[P]rogramming .color_pink[I]nterface）　とは
+.center[
+.size_small_7[
+ソフトウェアやアプリケーションなどの一部を外部に向けて公開することにより、<br>第三者が開発したソフトウェアと機能を共有できるようにしてくれるものです
+]
+]
+.center[
+.size_large_9[
+  __→外部とやりとりする窓口__
+]
+<img src="readme-img/api.png" alt="api.png" width="500px">
+]
+
+---
+.bottom-bar[
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+
+
+### 6.2. ニフクラ mobile backend の準備
+#### JavaScript SDK のインポート
+#### .color_pink[__SDK__]　(.color_pink[S]oftware .color_pink[D]evelopment .color_pink[K]it)　とは
+ .col-5[
+   <img src="readme-img/sdk.png" alt="sdk.png" width="400px">
+ ]
+ .col-7[
+   
+  * 外部サービスでmobile backendを使ってアプリ開発をする際に必要な__プログラムやコードの集まり__
+* APIで直接コーディングする場合に比べ__比較的簡単なコード__で実装可能
+ ]
+<br><br><br><br>
+.size_small_7[
+.center[
+（参考）ニフクラ mobile backendで利用可能なSDK<br>
+JavaScript.SDK, Objective-C / Jsva SDK, Unity SDK, Swift SDK☝️
+]
+]
+
+---
+.bottom-bar[
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+
 
 ### 6.2. ニフクラ mobile backend の準備
 
 .col-6[
 もう一度Monacaの開発画面のタブに戻りましょう。<br>
-クラウドの準備ができたので、<br>Monacaでクラウドを使う準備をしていきます。<br>
+mobile backendの準備ができたので、<br>Monacaでmobile backendを使う準備をしていきます。<br>
 <br>
 「設定」をクリックして、その中にある「JS/CSSコンポーネントの追加と削除」をクリックします。
 ]
@@ -1434,7 +1515,7 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1445,7 +1526,7 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1456,14 +1537,13 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 <br><br><br><br><br>
 .size_small_7[
-（参考）ニフクラmobile backend を Monaca で使う場合は、この「ncmb」を必ず追加する必要があるよ！
->JavaScript SDK
+（参考）ニフクラmobile backend を Monaca で使う場合は、この「ncmb」を必ず追加する必要があります！
 
 ]
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1474,7 +1554,7 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+ 6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1485,7 +1565,7 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1497,7 +1577,7 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1508,13 +1588,13 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
 #### コピペするためにこの資料をパソコンにダウンロードする
 
-さて、この後から自分で書くのではなく、出来上がったコードをコピペで使っていくために、コピー元のデータを用意しましょう。<br>
+この後からは所々出来上がったコードをコピペで使っていくために、コピー元のデータを用意しましょう。<br>
 ブラウザの別のタブを開いて、次のリンクを入力してEnterキーを押します。
 
 .center[
@@ -1525,7 +1605,7 @@ http://bit.ly/MonacaEasyStartApp
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1538,7 +1618,7 @@ http://bit.ly/MonacaEasyStartApp
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1551,14 +1631,13 @@ http://bit.ly/MonacaEasyStartApp
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
 
 Monacaの開発画面のタブに戻って、index.html を編集します。<br>
-index.html に元々ある.color_pink[__scriptタグ__]（ `<script>`, `</script>` ）内に次の内容をコピペします。<br>
-まずは先ほどダウンロードした資料のタブを開いて、次のコードをマウスで選択し、__右クリック__ して「コピー」をクリックします。
+index.html に元々ある.color_pink[__scriptタグ__]（ `<script>`, `</script>` ）内に次の内容を追加します。<br>
 
 ```js
 // ニフクラ mobile backend を使うための準備
@@ -1566,25 +1645,31 @@ var applicationKey = "YOUR_APPLICATION_KEY";
 var clientKey = "YOUR_CLIENT_KEY";
 var ncmb = new NCMB(applicationKey, clientKey);
 ```
-<br><br>
->SDKの初期化
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
 
-次にMonacaの開発画面のタブに戻って、scriptタグ の間で右クリックをして「ペースト」をクリックします。<br>
 次のように表示されればOKです。
 
 .center[<img src="readme-img/mb_22.png" alt="mb_22.png" width="550px">]
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
+
+### 6.2. ニフクラ mobile backend の準備
+
+.center[<img src="readme-img/tag.png" alt="tag.png" width="800px">]
+---
+.bottom-bar[
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+
 
 ### 6.2. ニフクラ mobile backend の準備
 
@@ -1593,7 +1678,7 @@ var ncmb = new NCMB(applicationKey, clientKey);
 .center[<img src="readme-img/mb_23.png" alt="mb_23.png" width="600px">]
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1605,7 +1690,7 @@ var ncmb = new NCMB(applicationKey, clientKey);
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1617,7 +1702,7 @@ Monacaの開発画面のタブに戻ります。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1627,7 +1712,7 @@ Monacaの開発画面のタブに戻ります。<br>
 .center[<img src="readme-img/mb_26.png" alt="mb_26.png" width="800px">]
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1639,7 +1724,7 @@ Monacaの開発画面のタブに戻ります。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1651,7 +1736,7 @@ Monacaの開発画面のタブに戻ります。<br>
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1661,13 +1746,13 @@ Monacaの開発画面のタブに戻ります。<br>
 .center[<img src="readme-img/mb_29.png" alt="mb_29.png" width="900px">]
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.3. コピペで機能追加
+### 6.3. 機能追加
 
 コメント入力機能を追加していきましょう。<br>
-index.html の bodyタグ の一番下に、次の内容をコピペします。<br>
+index.html の bodyタグ の一番下に、次の内容を追加します。<br>
 
 ```HTML
 <form name="messageForm">
@@ -1677,12 +1762,12 @@ index.html の bodyタグ の一番下に、次の内容をコピペします。
 <div id="log"></div>
 ```
 
-* ダウンロードした資料のタブを開いて、次のコードをコピーする
-* Monaca開発画面に戻って index.html の bodyタグ の一番下にペーストする
+* ダウンロードした資料のタブを開いて、次のコードをコピーしてもOK
+* Monaca開発画面に戻って index.html の bodyタグ の一番下に追加する
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.3. コピペで機能追加
@@ -1695,13 +1780,13 @@ index.html の bodyタグ の一番下に、次の内容をコピペします。
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.3. コピペで機能追加
 
 送信ボタンを押すとメッセージが保存されていくように処理を書いていきましょう<br>
-先ほど書いた内容に続けて、scriptタグ 内に次の内容をコピペします。（さっきと同じようにやろう！）
+先ほど書いた内容に続けて、scriptタグ 内に次の内容をコピペします。
 
 .size_small_5[
 ```js
@@ -1727,7 +1812,7 @@ function sendMessage() {
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.3. コピペで機能追加
@@ -1740,7 +1825,7 @@ function sendMessage() {
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.4. 動作確認
@@ -1754,7 +1839,7 @@ function sendMessage() {
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.4. 動作確認
@@ -1769,7 +1854,7 @@ function sendMessage() {
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.4. 動作確認
@@ -1781,7 +1866,7 @@ APIキー画面が表示されているので、「OK」をクリックして閉
 
 ---
 .bottom-bar[
-  6.&nbsp;TRY：コメント入力機能をつけよう
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 ### 6.4. 動作確認
@@ -1790,6 +1875,17 @@ APIキー画面が表示されているので、「OK」をクリックして閉
 「MessageClass」をクリックすると、入力したデータが保存されていることを確認できます。
 
 .center[<img src="readme-img/mb_35.png" alt="mb_35.png" width="900px">]
+
+### 応用編
+
+今日学んだことを生かして、少し応用させるだけで簡単にアプリの画面が作れるようになります👏<br>
+
+.center[<img src="readme-img/sample_ouyou.png" alt="sample_ouyou.png" width="600px">]
+
+---
+.bottom-bar[
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
 
 
 ---
