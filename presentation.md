@@ -1,4 +1,4 @@
-title: aaaプログラミング体験<br>1dayインターン
+title: プログラミング体験<br>1dayインターン
 class: animation-fade
 layout: true
 
@@ -138,7 +138,7 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 ]
 
 .bottom-bar[
-  はじめに
+  基礎知識を学習しましょう
 ]
 
 ---
@@ -146,7 +146,7 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 .center[<img src="readme-img/what-is-cloud.png" alt="AboutMonaca" width="700px">]
 
 .bottom-bar[
-  はじめに
+  基礎知識を学習しましょう
 ]
 
 ---
@@ -162,7 +162,7 @@ LINE, Facebook, カメラアプリなどは、どれもモバイルアプリの1
 .center[<img src="readme-img/cloud_image.png" alt="cloud_image" width="650px">]
 
 .bottom-bar[
-  はじめに
+  基礎知識を学習しましょう
 ]
 
 ---
@@ -177,20 +177,19 @@ class: center, middle, animation-fade
 ---
 layout: false
 
-## 今回利用するツール
 ### Monaca
 * __【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。<br>開発スタイル／コーディング環境は選択可能。
 
 .center[<img src="readme-img/AboutMonaca.png" alt="AboutMonaca" width="600px">]
 
 .bottom-bar[
-  はじめに
+  今回利用するツール
 ]
 
 
 ---
 
-## 今回利用するツール
+
 .col-7[
   ### ニフクラ mobile backend
 __【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ <br>
@@ -201,18 +200,17 @@ __【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ <br
 
 
 .bottom-bar[
-  はじめに
+  今回利用するツール
 ]
 
 ---
 layout: false
 
-## 今回利用するツール
 ### Monaca と mobile backend でサーバー連携アプリは簡単に実現可能
 .size_small_7[
 この２つを組み合わせると、高度なアプリも簡単スピーディーに開発できます
 ]
-.center[<img src="readme-img/Monaca_mBaaS.png" alt="Monaca_mBaaS" width="400px">]
+.center[<img src="readme-img/Monaca_mBaaS.png" alt="Monaca_mBaaS" width="500px">]
 
 .col-6[
   .size_small_7[
@@ -235,7 +233,7 @@ layout: false
   
 
 .bottom-bar[
-  はじめに
+  今回利用するツール
 ]
 
 ---
@@ -672,6 +670,22 @@ index.html が保存されて、プレビュー画面も更新されましたね
 練習は以上です！いよいよアプリを作っていきます🤩
 
 ---
+.bottom-bar[
+  3.&nbsp;Monacaの使い方練習
+]
+
+## Monacaデバッガーをインストール（任意）
+
+Monacaのプレビュー画面を自分のスマホ上で確認できます。
+
+.center[<img src="readme-img/monacadebager.png" alt="monacadebager.png" width="600px">]
+
+AppStoreまたはGooglePlayから「Monacaデバッガー」と検索して<br>インストールしましょう📱<br>
+.size_small_7[
+※インストール後はログインしましょう🤗
+]
+
+---
 layout: true
 class: center, middle, animation-fade
 
@@ -685,12 +699,12 @@ layout: false
   4.&nbsp;プロフィールアプリを作る①（パーツの書き方）
 ]
 
-さっき下書きした内容をアプリに表示するように`<body>`と`</body>`の間に書き込んで行きましょう。<br>
+さっき下書きした内容をアプリに表示するように`<body>`と`</body>`の間に書き込んでいきましょう。<br>
 完成イメージはこんな感じです。
 
 .center[<img src="readme-img/complete.png" alt="complete.png" width="180px">]
 
-でもどうやって書いたらいいのかな？？書くために必要なパーツを教えます☝️
+これから、書くために必要なパーツを教えます☝️
 
 ---
 .bottom-bar[
@@ -1213,7 +1227,7 @@ layout: false
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-最後に.color_pink[__コメント機能__]を追加しましょう😉！<br>
+最後にクラウドを連携して.color_pink[__コメント機能__]を追加しましょう😉！<br>
 完成したプロフィールアプリをみんなに見せてコメントをもらえるようにしましょう😍<br>
 
 .size_small_7[
@@ -1241,7 +1255,8 @@ layout: false
 
 ### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
 
-スマートフォンアプリの.color_pink[__クラウドデータベース__]サービスです。<br>
+スマートフォンアプリの.color_pink[__クラウドデータベース__]サービス<br>
+いわゆる.color_pink[__mBaaS__]と言われるサービスです🤔
 
 .col-7[
 ＜例＞__メッセージ送信アプリ__<br>
@@ -1261,7 +1276,7 @@ layout: false
 
 ### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
 
-.center[<img src="readme-img/usecase.png" alt="usecase.png" width="750px">]
+.center[<img src="readme-img/function.png" alt="function.png" width="700px">]
 
 
 ---
@@ -1271,13 +1286,15 @@ layout: false
 
 ### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
 
-.center[<img src="readme-img/function.png" alt="function.png" width="700px">]
+.center[<img src="readme-img/usecase.png" alt="usecase.png" width="750px">]
 
 
 ---
 .bottom-bar[
  6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
+
+
 ### 6.1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
 
 
@@ -1559,7 +1576,7 @@ mobile backendの準備ができたので、<br>Monacaでmobile backendを使う
 
 ### 6.2. ニフクラ mobile backend の準備
 
-必ずチェックを入れてから「OK」をクリックします。
+必ずチェックを入れてから「保存」をクリックします。
 
 .center[<img src="readme-img/mb_19.png" alt="mb_19.png" width="550px">]
 
@@ -1770,7 +1787,7 @@ index.html の bodyタグ の一番下に、次の内容を追加します。<br
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.3. コピペで機能追加
+### 6.3. 機能追加
 
 こんな感じになればOKです！
 
@@ -1876,21 +1893,36 @@ APIキー画面が表示されているので、「OK」をクリックして閉
 
 .center[<img src="readme-img/mb_35.png" alt="mb_35.png" width="900px">]
 
-### 応用編
-
-今日学んだことを生かして、少し応用させるだけで簡単にアプリの画面が作れるようになります👏<br>
-
-.center[<img src="readme-img/sample_ouyou.png" alt="sample_ouyou.png" width="600px">]
-
 ---
 .bottom-bar[
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
 
+
+### 応用編
+
+.col-6[
+  今日学んだことを生かして、少し応用させるだけで簡単にこのような画面が作れるようになります👏<br>
+  もし余裕があればデザインを変更してみましょう🌷
+
+]
+
+.col-6[
+  .right[
+    <img src="readme-img/sample_ouyou.png" alt="sample_ouyou.png" width="250px">
+  
+    ]]
+
+
+.bottom-bar[
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+
 ---
 layout: true
 class: center, middle, animation-fade
+
 ---
 # 7. アプリを使って自己紹介しよう！
 
