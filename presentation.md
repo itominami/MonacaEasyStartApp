@@ -18,7 +18,7 @@ class: impact
 .footnote[
 .left[
 .size_small_7[
-Copyright 2019 FUJITSU CLOUD TECHNOLOGIES LIMITED<br>
+Copyright 2020 FUJITSU CLOUD TECHNOLOGIES LIMITED<br>
 Created by natsumo ikeda
 ]
 ]
