@@ -50,7 +50,7 @@ layout: false
 .col-7[
 富士通クラウドテクノロジーズ株式会社<br>
 ニフクラ mobile backend 企画チーム<br>
-新卒2年目文系卒<br><br>
+文系学部卒　新卒２年目<br><br>
 <img src="readme-img/mb_logo.png" alt="mb_logo.png" width="500px">
 
 <img src="readme-img/takano.png" alt="takano.png" width="200px">
@@ -89,7 +89,9 @@ layout: false
 
 ---
 ## アジェンダ
+
 .col-6[
+  .size_small_7[
 * __基礎知識を学習しましょう__
     1. モバイルアプリ開発について
     1. クラウドとは？
@@ -99,16 +101,20 @@ layout: false
 * __2.アプリ作成ツール「Monaca」の準備__
 * __3.Monacaの使い方練習__
 * __4.プロフィールアプリを作る①__<br>（パーツの書き方）
+* __5.プロフィールアプリを作る②__<br>（アレンジの仕方）
+  ]
 ]
 .col-6[
-* __5.プロフィールアプリを作る②__<br>（アレンジの仕方）
+  .size_small_7[
 * __6.mobile backend1事前準備（クラウド連携）__
-    1. ニフクラ mobile backend とは
+    1. アプリの汎用的な機能をクラウド上で提供するニフクラ mobile backend とは
     1. ニフクラ mobile backend の準備
-    1. コピペで機能追加
+    1. 機能追加
     1. 動作確認
+    1. 応用編
 * __7.アプリを使って自己紹介しよう！__
 * __まとめ__
+]
 ]
 
 ---
@@ -178,7 +184,7 @@ class: center, middle, animation-fade
 layout: false
 
 ### Monaca
-* __【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。<br>開発スタイル／コーディング環境は選択可能。
+ __【[Monaca](https://ja.monaca.io/)】__ HTML5/JavaScript/CSS3でスマホアプリが開発できる開発環境。<br>開発スタイル／コーディング環境は選択可能。
 
 .center[<img src="readme-img/AboutMonaca.png" alt="AboutMonaca" width="600px">]
 
@@ -332,13 +338,7 @@ layout: false
 ### Gmailアカウントをお持ちでない方
 
 こちらで用意しているアカウントがあるので近くのスタッフにお声がけください🙌
-```
-使用上の注意
-  1. 最後にアプリを削除してください
-  1. mBaaSのログアウトを行ってください
-  1. Chrome上からもログアウトを行ってください
- ※ ChromeにPWを記憶するかどうか確認されたらキャンセルを選択してください
-```
+
 
 ---
 .bottom-bar[
@@ -1308,7 +1308,7 @@ layout: false
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 環境準備手順
+### 6.2. ニフクラ mobile backend の準備
 .size_large_13[
 1. mobile backendのアカウントを取得
 1. Monaca で mobile backend を利用するための準備
@@ -1616,7 +1616,7 @@ mobile backendの準備ができたので、<br>Monacaでmobile backendを使う
 
 .center[
 .size_large_18[
-https://00m.in/YUTSg
+https://00m.in/xB322
 ]
 ]
 
@@ -1637,6 +1637,15 @@ https://00m.in/YUTSg
 .bottom-bar[
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
+
+### 6.2. ニフクラ mobile backend の準備
+
+.center[<img src="readme-img/tag.png" alt="tag.png" width="800px">]
+---
+.bottom-bar[
+  6.&nbsp;mobile backend 事前準備（クラウド連携）
+]
+
 
 ### 6.2. ニフクラ mobile backend の準備
 
@@ -1666,13 +1675,6 @@ var ncmb = new NCMB(applicationKey, clientKey);
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.2. ニフクラ mobile backend の準備
-
-.center[<img src="readme-img/tag.png" alt="tag.png" width="800px">]
----
-.bottom-bar[
-  6.&nbsp;mobile backend 事前準備（クラウド連携）
-]
 
 
 ### 6.2. ニフクラ mobile backend の準備
@@ -1766,7 +1768,6 @@ index.html の bodyタグ の一番下に、次の内容を追加します。<br
 <div id="log"></div>
 ```
 
-* ダウンロードした資料のタブを開いて、次のコードをコピーしてもOK
 * Monaca開発画面に戻って index.html の bodyタグ の一番下に追加する
 
 ---
@@ -1787,23 +1788,29 @@ index.html の bodyタグ の一番下に、次の内容を追加します。<br
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.3. コピペで機能追加
+### 6.3. 機能追加
 
 送信ボタンを押すとメッセージが保存されていくように処理を書いていきましょう<br>
 先ほど書いた内容に続けて、scriptタグ 内に次の内容をコピペします。
 
-.size_small_5[
+.size_small_3[
 ```js
 function sendMessage() {
   var text = document.forms.messageForm.message.value;
+  //テキストに何も入力されなかったらNGと表示
   if(text.length === 0) {
     document.getElementById("log").innerText = "NG";
     return false;
-  }
+  } 
+  //データストアにMessageClassを作成
   var MessageClass = ncmb.DataStore("MessageClass");
+  //値を設定するクラスインスタンスを生成
   var messageClass = new MessageClass();
+  //メッセージフィールドに入力されたテキストを保存
   messageClass.set("message", text)
+          //保存
           .save()
+          //コールバック（成功失敗の処理）
           .then(function(){
             document.getElementById("log").innerText = "OK"
           })
@@ -1819,7 +1826,7 @@ function sendMessage() {
   6.&nbsp;mobile backend 事前準備（クラウド連携）
 ]
 
-### 6.3. コピペで機能追加
+### 6.3. 機能追加
 
 こんな感じになればOKです！
 
@@ -1957,6 +1964,23 @@ layout: false
 .bottom-bar[
   まとめ
 ]
+
+# まとめ
+### FJCT用意のGmailアカウントを使用した方
+
+使用後の注意
+  1. 最後にアプリを削除してください
+  1. mBaaSのログアウトを行ってください
+  1. Chrome上からもログアウトを行ってください
+ ※ ChromeにPWを記憶するかどうか確認されたらキャンセルを選択してください
+
+
+---
+.bottom-bar[
+  2.&nbsp;アプリ作成ツール「Monaca」の準備
+]
+
+
 
 # まとめ
 .col-7[
