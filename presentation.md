@@ -1616,22 +1616,9 @@ mobile backendの準備ができたので、<br>Monacaでmobile backendを使う
 
 .center[
 .size_large_18[
-hhttps://00m.in/YUTSg
+https://00m.in/YUTSg
 ]
 ]
-
----
-.bottom-bar[
-  6.&nbsp;mobile backend 事前準備（クラウド連携）
-]
-
-### 6.2. ニフクラ mobile backend の準備
-#### コピペするためにこの資料をパソコンにダウンロードする
-
-資料がダウンロードされます。<br>
-画面左下にファイルがダウンロードされるのでクリックして開きましょう。
-
-.center[<img src="readme-img/mb_36.png" alt="mb_36.png" width="600px">]
 
 ---
 .bottom-bar[
@@ -1643,7 +1630,7 @@ hhttps://00m.in/YUTSg
 
 別のタブが開いて、資料が表示されます。
 
-.center[<img src="readme-img/mb_37.png" alt="mb_37.png" width="600px">]
+.center[<img src="readme-img/screenshot.png" alt="screenshot.png" width="600px">]
 
 
 ---
