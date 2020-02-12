@@ -40,9 +40,9 @@ layout: false
 # 今日の資料
 
 * ダウンロード（PDF)
-  * `http://bit.ly/MonacaEasyStartApp_pdf`
+  * `https://00m.in/YUTSg`
 * ブラウザ（HTML）
-  * `http://bit.ly/MonacaEasyStartApp_html`
+  * `https://00m.in/xB322`
 
 ---
 # 伊藤みなみ
@@ -1616,7 +1616,7 @@ mobile backendの準備ができたので、<br>Monacaでmobile backendを使う
 
 .center[
 .size_large_18[
-http://bit.ly/MonacaEasyStartApp
+hhttps://00m.in/YUTSg
 ]
 ]
 
