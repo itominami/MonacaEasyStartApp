@@ -1508,7 +1508,7 @@ APIキーは後ほど使います。一旦このままにしておきましょ�
 .size_small_7[
 .center[
 （参考）ニフクラ mobile backendで利用可能なSDK<br>
-JavaScript.SDK, Objective-C / Jsva SDK, Unity SDK, Swift SDK☝️
+JavaScript.SDK, Objective-C / Java SDK, Unity SDK, Swift SDK☝️
 ]
 ]
 
@@ -1537,7 +1537,7 @@ mobile backendの準備ができたので、<br>Monacaでmobile backendを使う
 
 ### 6.2. ニフクラ mobile backend の準備
 
-「コンポーネント名」のところに「_NCMB_」と入力して、隣にある「検索する」をクリックします。
+「コンポーネント名」のところに「_ncmb_」と入力して、隣にある「検索する」をクリックします。
 
 .center[<img src="readme-img/mb_16.png" alt="mb_16.png" width="600px">]
 
@@ -1942,14 +1942,14 @@ layout: false
 
 使用後の注意
   1. 最後にアプリを削除してください
-  1. mBaaSのログアウトを行ってください
+  1. mobile backendのログアウトを行ってください
   1. Chrome上からもログアウトを行ってください
  ※ ChromeにPWを記憶するかどうか確認されたらキャンセルを選択してください
 
 
 ---
 .bottom-bar[
-  2.&nbsp;アプリ作成ツール「Monaca」の準備
+  まとめ
 ]
 
 
